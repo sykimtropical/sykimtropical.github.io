@@ -28,8 +28,6 @@ url: "https://sykimtropical.github.io"
 github:
   username: sykimtropical # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -38,8 +36,6 @@ social:
   email: tropical7890@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -58,20 +54,20 @@ webmaster_verifications:
 
 # Web Analytics Settings
 analytics:
-  google:
-    id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
+#  google:
+#    id: # fill in your Google Analytics ID
+#  goatcounter:
+#    id: # fill in your GoatCounter ID
+#  umami:
+#    id: # fill in your Umami ID
+#    domain: # fill in your Umami domain
+#  matomo:
+#    id: # fill in your Matomo ID
+#    domain: # fill in your Matomo domain
+#  cloudflare:
+#    id: # fill in your Cloudflare Web Analytics token
+#  fathom:
+#    id: # fill in your Fathom Site ID
 
 # Page views settings
 pageviews:
