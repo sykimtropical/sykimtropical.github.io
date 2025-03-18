@@ -2,6 +2,7 @@
 layout: post
 title:  "DB별 varchar(n)의 n 의미"
 date:   2024-02-20 10:00:00 +0900
+category: [DB]
 tags: [DB,oracle,mysql,mariadb]
 lastmod : 2024-02-20 10:00:00 +0900
 sitemap :

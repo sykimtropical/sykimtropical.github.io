@@ -2,6 +2,7 @@
 layout: post
 title:  "Spring Boot3 & Undertow 에서 HTTP Method 제한하기"
 date:   2024-02-08 10:00:00 +0900
+category: [HTTP]
 tags: [SpringBoot,Undertow,내장WAS]
 lastmod : 2024-02-08 10:00:00 +0900
 sitemap :

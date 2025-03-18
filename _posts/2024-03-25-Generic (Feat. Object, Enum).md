@@ -2,6 +2,7 @@
 layout: post
 title:  "Generic (Feat. Object, Enum)"
 date:   2024-03-25 21:00:00 +0900
+category: [Java]
 tags: [generic,Object,Enum]
 lastmod : 2024-03-25 21:00:00 +0900
 sitemap :

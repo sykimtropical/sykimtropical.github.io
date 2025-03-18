@@ -2,6 +2,7 @@
 layout: post
 title:  "스트림(Stream)과 옵셔널(Optional)"
 date:   2024-03-18 21:00:00 +0900
+category: [Java]
 tags: [java,stream,optional]
 lastmod : 2024-03-18 21:00:00 +0900
 sitemap :

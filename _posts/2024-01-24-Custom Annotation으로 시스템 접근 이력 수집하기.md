@@ -2,6 +2,7 @@
 layout: post
 title:  "Custom Annotaion으로 시스템 접근이력 수집하기"
 date:   2024-01-24 11:00:00 +0900
+category: [Spring]
 tags: [customannotaion, AOP]
 lastmod : 2024-01-24 11:00:00 +0900
 sitemap :
