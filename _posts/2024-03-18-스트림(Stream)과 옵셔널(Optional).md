@@ -13,7 +13,7 @@ sitemap :
 java8 부터 추가된 기능으로 데이터의 흐름에서 원하는 조건을 거는 filter, 필터링된 값을 담는 map, 최종 결과물 만들기(Collect) 를 수행한다.<br>
 이전에도 외부반복자(for, while 등)를 이용하여 위 행위가 가능했으나, 스트림은 내부반복자를 이용하기 때문에 병렬처리가 쉬워지며 코드가 간결해진다.<br>
 
-![스트림 외부,내부 반복자](https://sykimtropical.github.io/img/stream-img-1.jpg)
+![스트림 외부,내부 반복자](/assets/img/2024-03-18-Stream-Optional/stream-img-1.jpg)
 
 ## 스트림 단계
 스트림을 생성, 중간연산 마다 중간 스트림 생성, 최종 스트림 생성 과정에서 중간 스트림이 생성될때마다 바로 연산이 진행되지 않는다.(**지연-lazy**)<br>
@@ -253,7 +253,7 @@ System.out.println("findAnyResult = " + findAnyResult);
 <br>
 우선 동시성과 병렬성을 알아보자.<br>
 
-![동시성과 병렬성](https://sykimtropical.github.io/img/stream-img-2.jpg)
+![동시성과 병렬성](/assets/img/2024-03-18-Stream-Optional/stream-img-2.jpg)
 
 <br>
 동시성은 하나의 cpu가 하나의 작업만을 실행하지만, 번갈아가면서 작업을 하기 때문에 동시에 처리되는 것 처럼 보일 뿐이다. (하나의 작업을 나누어 실행-병렬스트림일때만)<br>
