@@ -226,4 +226,4 @@ jekyll-archives:
     category: /categories/:name/
 
 plugins:
-  - jekylly-sitemap
+  - jekyll-sitemap
