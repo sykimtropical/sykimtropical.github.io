@@ -1,4 +1,14 @@
-
+---
+layout: post
+title:  "mybatis connection pool 개수 감소"
+date:   2025-03-27 11:00:00 +0900
+category: [Java]
+tags: [mybatis, Java, DB]
+lastmod : 2025-03-27 11:00:00 +0900
+sitemap :
+  changefreq : daily
+  priority : 1.0
+---
 솔루션을 ibatis에서 mybatis로 변경 후 connection pool 이 특정 시점에 줄어드는 이슈를 확인 한 적이 있다.<br>
 확인해보니 SqlSession객체를 이용해 작성되었는데, mybatis는 ibatis와 달리 자원해제 `close()` 메서드를 직접 호출해주는데 일부 finally 구문에 누락된 부분이 존재했기 때문이다.<br>
 <br>
