@@ -154,7 +154,7 @@ public class TestService {
 의존성 주입
 **build.gradle**
 ```groovy
-implementation 'org.springframework.boot:spring-boot-starter-aop
+implementation 'org.springframework.boot:spring-boot-starter-aop'
 ```
 <br><br>
 
@@ -178,16 +178,26 @@ public class AOPConfig {
           return pjp.proceed();
        }
 
-       String action = signature.getMethod().getAnnotation(AccessAnnotation.class).action();
+       Action action = signature.getMethod().getAnnotation(AccessAnnotation.class).action();
        String accessLog  = signature.getMethod().getAnnotation(AccessAnnotation.class).log();
 
-       log.info("action : {}, accessLog : {}", action, accessLog);
+       log.info("action : {}, accessLog : {}", actiontoString(), accessLog);
        return pjp.proceed();
     }
 
 }
 ```
 <br><br>
+
+
+## Enum 생성
+```java
+public enum Action {  
+    CREATE, READ, UPDATE, DELETE  
+}
+```
+<br><br>
+
 
 ## 커스텀 어노테이션 인터페이스 생성
 **AccessAnnotation.java**
@@ -202,7 +212,7 @@ public class AOPConfig {
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface AccessAnnotation {
-    String action();
+    Action action();
     String log();
 }
 ```
@@ -220,7 +230,7 @@ public class TestController {
     private final TestService testService;
 
     @GetMapping("/home")
-    @AccessAnnotation(log = "home 조회", action = "READ")
+    @AccessAnnotation(log = "home 조회", action = Action.READ)
     public String home(){
        // home에 진입하였습니다.
        log.info("/home call");
@@ -229,7 +239,7 @@ public class TestController {
     }
 
     @PostMapping("/home")
-    @AccessAnnotation(log = "home 생성", action = "CREATE")
+    @AccessAnnotation(log = "home 생성", action = Action.CREATE)
     public ResponseEntity<String> createHome(@RequestParam Map<String, String> params){
        // home 을 생성하였습니다.
        log.info("POST /home call");
@@ -240,7 +250,7 @@ public class TestController {
 
 
     @GetMapping("/list")
-    @AccessAnnotation(log = "list 조회", action = "READ")
+    @AccessAnnotation(log = "list 조회", action = Action.READ)
     public String list(){
        // list에 진입하였습니다.
        log.info("/list call");
